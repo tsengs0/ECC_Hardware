@@ -1,0 +1,205 @@
+$date
+	Sun Aug 11 02:35:46 2019
+$end
+
+$version
+	Synopsys VCS version N-2017.12-SP2_Full64
+$end
+
+$timescale
+	1s
+$end
+
+$comment Csum: 1 1d60cd9487842691 $end
+
+
+$scope module hamming_tb $end
+$var reg 8 ! data_in [7:0] $end
+$var wire 12 " encoded_data [11:0] $end
+$var wire 8 # decoded_data [7:0] $end
+$var wire 1 $ error_flag $end
+$var wire 1 % correct_flag $end
+$var reg 1 & sys_clk $end
+$var reg 1 ' rstn $end
+$var reg 8 ( received_data [7:0] $end
+$var integer 32 ) bit_id $end
+
+$scope module u0 $end
+$var wire 8 ! data_in [7:0] $end
+$var wire 12 " code_out [11:0] $end
+$var wire 4 * parity [3:0] $end
+$upscope $end
+
+
+$scope module u1 $end
+$var reg 8 # data_out [7:0] $end
+$var wire 1 $ error_flag $end
+$var reg 1 % correct_flag $end
+$var wire 12 + data_in [11:0] $end
+$var wire 1 & sys_clk $end
+$var wire 1 ' rstn $end
+$var reg 4 , error_detection [3:0] $end
+$var wire 8 - mask_byte [7:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+1'
+0&
+x$
+1%
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx )
+b00000000 !
+bxxxxxxxx #
+bxxxx ,
+bxxxxxxxx -
+b0000 *
+b00000000 (
+bxxxxxxxxxxxx "
+bxxxxxxxxxxxx +
+$end
+b00000000xxxx "
+b00000000xxxx +
+b000000000000 "
+b000000000000 +
+#1
+0'
+b0000 ,
+0$
+bzzzzzzzz #
+0%
+b00000000 -
+#2
+1'
+#3
+b00000000000000000000000000000100 )
+#4
+b00010000 (
+b000100000000 +
+#5
+1&
+b1001 ,
+1$
+b00010000 -
+#10
+b00001010 !
+b000010100000 "
+b000010100010 "
+b000100000010 +
+0&
+b0010 *
+b00000000 #
+1%
+#11
+0'
+b0000 ,
+0$
+bzzzzzzzz #
+0%
+b00000000 -
+#12
+b00001010 (
+b000010100010 +
+1'
+#13
+b00000000000000000000000000000001 )
+#14
+b00001000 (
+b000010000010 +
+#15
+1&
+b0101 ,
+1$
+b00000010 -
+#20
+b11111111 !
+b111111110010 "
+b111111111111 "
+b000010001111 +
+0&
+b1111 *
+b00001010 #
+1%
+#21
+0'
+b0000 ,
+0$
+bzzzzzzzz #
+0%
+b00000000 -
+#22
+b11111111 (
+b111111111111 +
+1'
+#24
+b11111101 (
+b111111011111 +
+#25
+1&
+b0101 ,
+1$
+b00000010 -
+#30
+b10100000 !
+b101000001111 "
+b101000001010 "
+b111111011010 +
+0&
+b1010 *
+b11111111 #
+1%
+#31
+0'
+b0000 ,
+0$
+bzzzzzzzz #
+0%
+b00000000 -
+#32
+b10100000 (
+b101000001010 +
+1'
+#33
+b00000000000000000000000000000011 )
+#34
+b10101000 (
+b101010001010 +
+#35
+1&
+b0111 ,
+1$
+b00001000 -
+#40
+b00011011 !
+b000110111010 "
+b000110111000 "
+b101010001000 +
+0&
+b1000 *
+b10100000 #
+1%
+#41
+0'
+b0000 ,
+0$
+bzzzzzzzz #
+0%
+b00000000 -
+#42
+b00011011 (
+b000110111000 +
+1'
+#43
+b00000000000000000000000000000101 )
+#44
+b00111011 (
+b001110111000 +
+#45
+1&
+b1010 ,
+1$
+b00100000 -
